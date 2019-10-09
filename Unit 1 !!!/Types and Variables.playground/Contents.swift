@@ -5,13 +5,20 @@ var str = "Hello, playground"
 // declared a viable fellowName of type string. data types: String, Int is short for integer
 //type inference : implicit declaration of a varisble
 var fellowName = "David Lin"
+fellowName = "Chelsi Christmas"
 
 
 //type annotation- : explicitly writing or defining the data type usuing : (colon)
 var cohort: String = "iOS 6.3"
 
-
-var alpha = "c"
+let fullName = "Alex" + " Paul" // the outcome becomes Alex Paul // must add a space after the " after the plus sign so that the space shows up between first and last name
+print("Person's full name is \(fullName)")
+// usins string interpolation we are printing fullName's description
+let lowerCaseName = "alex"
+let upperCaseName = "Alex"
+let stringResult = lowerCaseName == upperCaseName
+let alphabeticalOrder = "Kelby" < "Lorraine"
+print("Alphabetical Order result is \(alphabeticalOrder)")
 //******************************************************************
 //                            CHARACTER
 //***************************************************************
@@ -29,9 +36,36 @@ var age = 23
 var ageOfFellow = 32
 // we dont need quotes for integers and you can do arithmic calculations with integers
 var futureAgeOfFellow = ageOfFellow + 8
+//interger division truncates decimals. truncate means to eliminate.
+let intergerDivision = 16 / 3
+print("interger division is \(intergerDivision)")
+
+let floatingPointDivision = 16.0 / 3.0
+print("floating division is \(floatingPointDivision)")
+    
 //==================================================================
 
 print("Age of fellow 8 years from now is \(futureAgeOfFellow)")
+
+//__________________________________________________________________________________________-
+//                   YOU CANNOT DIVIDE 0.THE APP WILL CRASH EX. 89/0 DOES NOT COMPLILE_
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~----------------------------------
+
+//______________________________________________________________
+//          FLOAT VS. DOUBLES
+//------------------------------------------------------------
+//A DOUBLE HAS DOUBLE THE PERCISION SPACE THAN FLOAT
+let floatNum: Float = 67.84987857394793947
+let doubleNum = 67.84987857539579
+print ("float is \(floatNum) and double is \(doubleNum)")
+
+//you canna add a float to a double . it wont compile.
+let accountBalance = Double(floatNum) + doubleNum
+// above we are casting (converting) a float to a double
+print ("Account balance is now \(accountBalance)")
+
+
+
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 //                              DOUBLE
@@ -84,9 +118,13 @@ print(modResult)
 
 var even = 12 % 6
 print(even)
-//++++++++++++++++
-//Constants
+//++++++++++++++++____
+//                                              Constants
 //+++++++++++++++++
 
 let pi = 3.14
+/*swift was introduced in 2014. iphone came out in 2007. by 2008 people were writing code and makking apps. swift is a type safe language. */
+
+
+
 
