@@ -138,12 +138,12 @@ print(finalResult)
 
 //var arrayOfNumbers = [4,0,7,8,3,0,4,3,8]
 
-func findOutlier (inputArray:[Int]) -> [Int] {
+/*func findOutlier (inputArray:[Int]) -> [Int] {
     var outlier: [Int] = []
     
     for num in inputArray {
         
-        else {
+     else {
             outlier.append(num) }
         
         }
@@ -155,7 +155,7 @@ let answer = findOutlier(inputArray: arrayOfNumbers)
 
 print(answer)
 
-
+*/
         // More Question Review (Closures Lab) //
 
 // Question Four
@@ -167,11 +167,11 @@ print(answer)
 // Your function here
 func sortedNamesByLastName(in names: [(String , String)]) -> [(String,String)] {
     
-   let result = names.sorted{ names1, names2 in
+   let result = names.sorted { names1, names2 in
         
         // "<" here means ascending from a - z. descending would be ">". not sorted need a "return but it doesnt have to be written because it implicitly return what u put "
         
-        names1.1 < names2.1
+    names1.1 < names2.1
     }
     return result
 }
@@ -201,7 +201,7 @@ print(sortedNamesByLastName(in: firstAndLastTuples))
 let outputFour = sortedNamesByLastName(in: firstAndLastTuples)
 assert(outputFour.elementsEqual(expectedOutputFour, by: { $0 == $1 }), "Expected output to be \(expectedOutputFour), but found \(outputFour)")
 
-
+/*
 // More Practice
 
 let arr = [4,5,1,-7,-99]
@@ -257,3 +257,4 @@ let squareArray = customMap(arr: numArray) {$0 * $0}
 let squaredArray = customMap(arr: numArray) { number in number * number  }
 print(squareArray)
 print(squaredArray)
+*/

@@ -297,7 +297,7 @@ func getPlaylistFunc(dict: [String:Any])-> Playlist? {
     let playlist = Playlist(name: name, trackCount: trackCount, description: description, isTop100: isTop100)
 return playlist
 }
-// 
+//
 let completedPlaylist = getPlaylistFunc(dict: playlistDict)
 
 // print(completedPlaylist?.name ?? "playlist not created")
