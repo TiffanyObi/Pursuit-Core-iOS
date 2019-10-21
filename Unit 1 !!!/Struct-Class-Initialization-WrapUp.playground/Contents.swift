@@ -94,3 +94,21 @@ class Dog: Animal {
 
 let frenchBulldog = Dog(age: 11, breed: "French Bulldog")
 frenchBulldog.info()
+
+/*
+ More practice using the (static) as a type property or type method "hinter"
+ */
+
+class MoreFellows {
+    var age: Int
+    static var count: Int = 0
+    init(age:Int) {
+        self.age = age
+        
+        MoreFellows.count += 1}
+}
+
+var fellow1 = MoreFellows(age: 24)
+var fellow2 = MoreFellows(age: 35)
+
+MoreFellows.count
